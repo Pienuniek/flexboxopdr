@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>Contact</title>
+    </head>
+    <body class="yelbgc">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+           <!-- hier zet je de code in de body tags-->
+           <header>
+                    <h1 class="navy-border green-background" >Contact</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="recepten.html">Recepten</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>  
+            </header>
+  
+        <main class="red-border">
+          <p><h3>Contact:</h3></p>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>Name: <input type="text" name="name" /></label>   
+                </p>
+                <p>
+                  <label>Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Submit</button>
+                  <input type="reset">
+                </p>
+        
+              </form>
+            <hr>
+
+            <p><h3>Lever hier je recept in:</h3></p>
+          <form name="recept" method="POST" data-netlify="true">
+            <p>
+              <label>Naam: <input type="text" name="namer"/></label>
+            </p>
+            <p>
+              <label>Email: <input type="email" name="emailr"/></label>
+            </p>
+            <p>
+              <label>Telefoon nummer: <input type="tel" name="telnrr"/></label>
+            </p>
+            <p>
+              <label>Leeftijd: <input type="number" name="age"/></label>
+            </p>
+            <p>
+              <label>Geboortedatum: <input type="date" name="DOB"/></label>
+            </p>
+            <p>Geslacht:
+            </p>
+              <input type="radio" id="male" name="gender" value="Male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="Female">
+              <label for="female">Female</label><br>
+              <input type="radio" id="Other" name="gender" value="Other">
+              <label for="Other">Other</label>
+              <label>nl: <input type="text" name="name" /></label>     
+              <br>
+            <p>Je Favoriete Keuken</p>
+              <input type="checkbox" id="kitchen1" name="kitchen1" value="Frans">
+              <label for="kitchen1"> De Franse Keuken</label><br>
+              <input type="checkbox" id="kitchen2" name="kitchen2" value="Italiaans">
+              <label for="kitchen2"> De Italiaanse Keuken</label><br>
+              <input type="checkbox" id="kitchen3" name="kitchen3" value="Spaans">
+              <label for="kitchen3"> De Spaanse Keuken</label><br>
+              <input type="checkbox" id="kitchen4" name="kitchen4" value="Arabisch">
+              <label for="kitchen4"> De Arabische Keuken</label>
+            <br>
+              <label for="aproncolor">Kies je favoriete kleur schort:</label>
+              <input type="color" id="aproncolor" name="aproncolor"><br><br>
+            <p>Korte Biografie:</p>
+              <textarea name="message" rows="10" cols="30"></textarea>
+            <br><br>
+            <label for="filerecipe">Selecteer een recept bestand:</label>
+            <input type="file" id="filerecipe" name="filerecipe">
+            <br><p>of</p>
+            <label for="recipeurl">Voeg de url van je recept toe:</label>
+            <input type="url" id="recipeurl" name="recipeurl"><br><br>
+            <button type="submit">Submit</button>
+            <input type="reset"><br><br>
+          </form>
+        </main>  
+        <footer class="navy-border green-background">
+            <a class= "big-font" href="https://www.google.nl/" target="_blank"><h1>GOOGLE</h1></a>
+        </footer>         
+    </body>
+</html>
